@@ -1,0 +1,90 @@
+<html>
+<center> <h1 style="background-color: cyan;"> SIMPLE CALCULATOR </h1>
+</center>
+<div id="sidebar">
+</div> 
+<hr>
+<hr style="border: 2px solid black;">
+	<div style="background-color: floralwhite; height: 400px; width:600px; margin-left:400px; border: double; border-radius: 25px; padding: 15px 20px; ">
+		<table align="center">
+
+			<tr>
+				<br> </br>
+				<td><h3> Enter number 1:</h3></td>
+				<td> <input style="background-color:blanchedalmond;" type="text" id="num1"></td>
+			</tr>
+				<tr>
+				<td><h3> Enter number 2:<h3> </td>
+				<td> <input style="background-color:blanchedalmond;" type="text" id="num2"></td>
+			</tr>
+				<tr>
+				<td><h3> Answer :<h3> </td>
+				<td> <input class="col" style="background-color:green" type="text" id="ans"></td>
+			</tr>
+		</table>
+		<table align="center">
+			<tr>
+				<td> <button style="background-color:palegreen;" onclick="add()">summation
+				</button></td><br></br>
+				<td> <button style="background-color:palegreen;" onclick="sub()">subtraction
+				</button></td>
+				<td> <button style="background-color:palegreen;" onclick="mul()">multiflication
+				</button></td>
+				<td> <button style="background-color:palegreen;" onclick="div()">division
+				</button></td>
+				
+			</tr>
+		</table>
+	</div>
+
+
+
+</html>
+<style>
+	
+body {
+  background-image: url('calc.jpg');
+}
+
+#sidebar
+{
+ background-color: red;
+		height: 2%;
+		width:100%;;
+} 
+.col
+{
+	color:white;
+}
+</style>
+<script>
+function add() {
+ 	var a,b,c;
+ 	a=Number(document.getElementById('num1').value);
+ 	
+ 	b=Number(document.getElementById('num2').value);
+ 	c=a+b; document.getElementById('ans').value=c;
+ } 
+ function sub() {
+ 	var a,b,c;
+ 	a=Number(document.getElementById('num1').value);
+ 	
+ 	b=Number(document.getElementById('num2').value);
+ 	c=a-b; document.getElementById('ans').value=c;
+ } 
+ function mul() {
+ 	var a,b,c;
+ 	a=Number(document.getElementById('num1').value);
+ 	
+ 	b=Number(document.getElementById('num2').value);
+ 	c=a*b; document.getElementById('ans').value=c;
+ } 
+ function div() {
+ 	var a,b,c;
+ 	a=Number(document.getElementById('num1').value);
+ 	
+ 	b=Number(document.getElementById('num2').value);
+ 	c=a/b; document.getElementById('ans').value=c;
+ } 
+ 
+</script>
